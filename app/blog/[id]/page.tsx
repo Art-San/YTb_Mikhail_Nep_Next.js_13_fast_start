@@ -5,7 +5,7 @@ async function getData(id: string) {
         `https://jsonplaceholder.typicode.com/posts/${id}`,
         {
             next: {
-                revalidate: 60 // запрос насервер раз в 60 сек
+                revalidate: 60
             }
         }
     )
